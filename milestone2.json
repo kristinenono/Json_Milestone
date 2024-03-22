@@ -1,0 +1,34 @@
+// USERS
+{
+    "user_id": UserID,
+    "first_name": String,
+    "last_name": String,
+    "email": String,
+    "role": ["AMA Member", "AMA Executive"]
+
+}
+
+// EVENTS
+{
+    "event_id": EventID,
+    "event_name": String,
+    "date_time": Timestamp,
+    "location": String,
+    "event_description": String
+}
+
+// BLOG POST
+{
+    "post_id": PostID,
+    "title": String,
+    "content": String,
+    "date_posted": Timestamp
+}
+
+// POINTS
+{
+    "point_id": PointID,
+    "user_id": UserID,
+    "event_id": EventID,
+    "points": number
+}
