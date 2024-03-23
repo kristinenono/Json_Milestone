@@ -1,23 +1,30 @@
-// USERS
+
 {
     "user_id": UserID,
     "first_name": String,
     "last_name": String,
     "email": String,
-    "role": ["AMA Member", "AMA Executive"]
-
+    "password": String,
+    "role": ["AMA Member", "AMA Executive"],
+    "current_points":
+        {
+            "semester": Number,
+            "user_points": Number
+        },
+    "created_at": Timestamp
 }
 
-// EVENTS
+
 {
     "event_id": EventID,
     "event_name": String,
     "date_time": Timestamp,
     "location": String,
-    "event_description": String
+    "event_description": String,
+    "created_at": Timestamp
 }
 
-// BLOG POST
+
 {
     "post_id": PostID,
     "title": String,
@@ -25,10 +32,12 @@
     "date_posted": Timestamp
 }
 
-// POINTS
+
 {
     "point_id": PointID,
     "user_id": UserID,
     "event_id": EventID,
-    "points": number
+    "points": Number,
+    "point_type": ["DEI","Professional","Social","Volunteer"]
+    "created_at": Timestamp
 }
